@@ -1,472 +1,954 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-<head>
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <!-- Core stylesheet -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/fontawesome.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/general_v2_min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/animate-v4.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/swiper-bundle.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+    <!-- End stylesheet -->
 
-	<!-- Core stylesheet -->
-	<link type="text/css" rel="stylesheet" href="assets/css/fontawesome.min.css">
-	<link type="text/css" rel="stylesheet" href="assets/css/general_v2_min.css">
-	<link type="text/css" rel="stylesheet" href="assets/css/global.css">
-	<link type="text/css" rel="stylesheet" href="assets/css/style.css">
-	<link type="text/css" rel="stylesheet" href="assets/css/animate-v4.min.css">
-	<link type="text/css" rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-	<link type="text/css" rel="stylesheet" href="assets/css/aos.css">
-	<link type="text/css" rel="stylesheet" href="assets/css/main.css">
-	<!-- End stylesheet -->
+    <title>
+      'AI và Clound giúp Việt Nam thoát khỏi bẩy thu nhập trung bình
+    </title>
+  </head>
 
-	<title>Sun Grand City Hillside Residence tại Phú Quốc - VnExpress</title>
-</head>
+  <body>
+    <!-- Document Warpper -->s
+    <div id="warpper" class="clearfix">
+      <!-- Top Nav -->
+      <div id="topbar" class="topbar fixed-top clearfix nav-down">
+        <div class="container">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=""
+          >
+            <span class="sr-only">Toggle navigation</span
+            ><span class="toggle-icon"></span>
+          </button>
+          <a href="https://vnexpress.net/" class="logo" id="logo"
+            ><img
+              src="assets/images/logo-150x29.png"
+              alt="VnExpress"
+              class="pc-only img-100"
+          /></a>
+          <div class="block-right">
+            <a
+              href="#box_comment"
+              class="button-comments count_comment"
+              data-target=""
+            >
+              <i class="fas fa-comment"></i>
+              <span class="counter">Bình luận</span>
+            </a>
+            <ul class="list-inline social">
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="si-facebook shape-circle social-item fb_share"
+                  data-type="fb_share"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="si-twitter shape-circle social-item tw_share"
+                  data-type="tw_share"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+            <form
+              action="https://timkiem.vnexpress.net/"
+              method="get"
+              class="block-right"
+            >
+              <div class="search">
+                <input
+                  autocomplete="off"
+                  type="text"
+                  class="search-input"
+                  placeholder="Tìm kiếm"
+                  maxlength="80"
+                  name="q"
+                />
+                <span class="search-btn">
+                  <button type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End Top Nav -->
+      <!-- Menu -->
+      <div class="mask-content"></div>
+      <div id="menu-box" class="menu-box" tabindex="5000">
+        <div class="box_width_common">
+          <div class="block_scoll_menu">
+            <ul class="list_item_panel">
+              <li>
+                <a href="https://vnexpress.net/"
+                  ><i class="ic ic-m-home"></i>Trang chủ</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/thoi-su"
+                  ><i class="ic ic-m-news"></i>Thời sự</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/goc-nhin"
+                  ><i class="ic ic-m-opinion"></i>Góc nhìn</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/the-gioi"
+                  ><i class="ic ic-m-world"></i>Thế giới</a
+                >
+              </li>
+              <li class="active">
+                <a href="https://vnexpress.net/kinh-doanh"
+                  ><i class="ic ic-m-business"></i>Kinh doanh</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/giai-tri"
+                  ><i class="ic ic-m-entertainment"></i>Giải trí</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/the-thao"
+                  ><i class="ic ic-m-sport"></i>Thể thao</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/phap-luat"
+                  ><i class="ic ic-m-law"></i>Pháp luật</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/giao-duc"
+                  ><i class="ic ic-m-education"></i>Giáo dục</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/suc-khoe"
+                  ><i class="ic ic-m-health"></i>Sức khỏe</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/doi-song"
+                  ><i class="ic ic-m-family"></i>Đời sống</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/du-lich"
+                  ><i class="ic ic-m-travel"></i>Du lịch</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/khoa-hoc"
+                  ><i class="ic ic-m-science"></i>Khoa học</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/so-hoa"
+                  ><i class="ic ic-m-technology"></i>Số hóa</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/oto-xe-may"
+                  ><i class="ic ic-m-car"></i>Xe</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/y-kien"
+                  ><i class="ic ic-m-social"></i>Ý kiến</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/tam-su"
+                  ><i class="ic ic-m-talk"></i>Tâm sự</a
+                >
+              </li>
+              <li>
+                <a href="https://video.vnexpress.net"
+                  ><i class="ic ic-m-video"></i>Video</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/anh"
+                  ><i class="ic ic-m-photo"></i>Ảnh</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/infographics"
+                  ><i class="ic ic-m-infographic"></i>Infographics</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/cuoi"
+                  ><i class="ic ic-m-fun"></i>Cười</a
+                >
+              </li>
+              <li>
+                <a href="https://raovat.vnexpress.net"
+                  ><i class="ic ic-m-ecom"></i>Fsell</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/24h-qua" class="bg_666"
+                  ><i class="ic ic-m-24h"></i>24h qua</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vnexpress.net/lien-he-toa-soan/"
+                  class="bg_e8e8"
+                  ><i class="ic ic-m-contact"></i>Liên hệ Tòa soạn</a
+                >
+              </li>
+              <li class="end">
+                <a href="https://vnexpress.net/contact.htm" class="bg_e8e8"
+                  ><i class="ic ic-m-mail"></i>Thông tin Tòa soạn</a
+                >
+              </li>
+            </ul>
+            <div class="coppy_right_left width_common">
+              <i class="ic ic-caret-2-down"></i>
+              <div class="txt_coppy_right">
+                <p>
+                  &copy; Copyright 1997 - VnExpress.net, All rights reserved
+                </p>
+                <p>&reg; VnExpress giữ bản quyền nội dung trên website này.</p>
+              </div>
+              <div class="txt_lienhe">
+                Hotline: <br />
+                <a href="tel:0838880123">083.888.0123 (Hà Nội)</a> <br />
+                <a href="tel:0822333555">082.233.3555 (TP HCM)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ascrail2000" class="nicescroll-rails">
+          <div class="vne-hr1"></div>
+        </div>
+        <div id="ascrail2000-hr" class="nicescroll-rails">
+          <div class="vne-hr2"></div>
+        </div>
+      </div>
+      <!-- End Menu -->
+      <!-- Main Content -->
+      <div class="section-content clearfix">
+        <div class="wrapper-content">
+          <div id="overlay"></div>
+          <div class="my_container">
+            <div class="section_1">
+              <div class="group_image_header pc">
+                <img class="img" src="assets/images/img_header.png" />
+                <img
+                  class="img"
+                  src="assets/images/group_1_1.png"
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-offset="300"
+                  data-aos-delay="600"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_1_2.png"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="300"
+                  data-aos-delay="1400"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_1_3.png"
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="300"
+                  data-aos-delay="1400"
+                />
+              </div>
+              <div class="group_image_header mobile">
+                <img class="img" src="assets/images/group_1_1_mobile.png" />
+                <img
+                  class="img"
+                  src="assets/images/group_1_2_mobile.png"
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-offset="300"
+                  data-aos-delay="600"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_1_3_mobile.png"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="300"
+                  data-aos-delay="1400"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_1_4_mobile.png"
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="300"
+                  data-aos-delay="1400"
+                />
+              </div>
+              <div class="section_1_1">
+                <p
+                  class="text_title t-content"
+                  data-aos="flip-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="700"
+                >
+                  AI và Cloud giúp doanh nghiệp có thể tăng năng suất lao động,
+                  rút ngắn thời gian ra quyết định, nâng cao tối thiểu 5% doanh
+                  thu, theo ông Lê Hồng Việt, Tổng Giám đốc FPT Smart Cloud.
+                </p>
+                <div class="section_1_1_sub">
+                  <div class="section_1_1_sub__1">
+                    <p
+                      class="text_content t-content"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="600"
+                      data-aos-offset="300"
+                    >
+                      Để thoát khỏi "bẫy" thu nhập trung bình và gia tăng lợi
+                      thế trong cuộc đua trở thành công xưởng thế giới, doanh
+                      nghiệp Việt cần tìm lời giải cho bài toán nâng cao năng
+                      suất lao động và rút ngắn tốc độ ra quyết định. Theo đó,
+                      áp dụng công nghệ mới, đặc biệt là trí tuệ nhân tạo (AI)
+                      và điện toán đám mây (Cloud) được coi là yếu tố giúp doanh
+                      nghiệp bứt tốc trong kỷ nguyên số.
+                    </p>
+                    <p
+                      class="text_content t-content"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="600"
+                      data-aos-offset="300"
+                    >
+                      Trả lời phỏng vấn VnExpress, ông Lê Hồng Việt – Tổng Giám
+                      đốc FPT Smart Cloud, doanh nghiệp hiện phát triển các sản
+                      phẩm ứng dụng AI và Cloud phục vụ hơn 12 triệu người dùng
+                      cuối hé mở bức tranh về tiềm năng thị trường và giấc mơ
+                      biến mọi doanh nghiệp Việt thành doanh nghiệp công nghệ.
+                    </p>
+                  </div>
+                  <img
+                    class="img_center img_5"
+                    src="assets/images/img_5.png"
+                    alt=""
+                    data-aos="zoom-in"
+                    data-aos-easing="linear"
+                    data-aos-duration="600"
+                    data-aos-offset="300"
+                  />
+                  <p
+                    class="text_content t-content alt_img trich"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="600"
+                    data-aos-offset="300"
+                  >
+                    - Ông đánh giá như thế nào về tiềm năng của thị trường Việt
+                    Nam trong việc triển khai các sản phẩm dựa trên AI và Cloud?
+                  </p>
+                </div>
+              </div>
 
-<body>
-	<!-- Document Warpper -->
-	<div id="warpper" class="clearfix">
-		<!-- Top Nav -->
-		<div id="topbar" class="topbar fixed-top clearfix nav-down">
-			<div class="container">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=""> <span
-						class="sr-only">Toggle
-						navigation</span><span class="toggle-icon"></span> </button>
-				<a href="https://vnexpress.net/" class="logo" id="logo"><img src="assets/images/logo-150x29.png"
-						alt="VnExpress" class="pc-only img-100"></a>
-				<div class="block-right">
-					<a href="#box_comment" class="button-comments count_comment" data-target=""> <i
-							class="fas fa-comment"></i>
-						<span class="counter">Bình luận</span> </a>
-					<ul class="list-inline social">
-						<li><a href="javascript:void(0);" class="si-facebook shape-circle social-item fb_share"
-								data-type="fb_share"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href="javascript:void(0);" class="si-twitter shape-circle social-item tw_share"
-								data-type="tw_share"><i class="fab fa-twitter"></i></a></li>
-					</ul>
-					<form action="https://timkiem.vnexpress.net/" method="get" class="block-right">
-						<div class="search">
-							<input autocomplete="off" type="text" class="search-input" placeholder="Tìm kiếm"
-								maxlength="80" name="q">
-							<span class="search-btn">
-								<button type="submit">
-									<i class="fas fa-search"></i>
-								</button>
-							</span>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<!-- End Top Nav -->
-		<!-- Menu -->
-		<div class="mask-content"></div>
-		<div id="menu-box" class="menu-box" tabindex="5000">
-			<div class="box_width_common">
-				<div class="block_scoll_menu">
-					<ul class="list_item_panel">
-						<li><a href="https://vnexpress.net/"><i class="ic ic-m-home"></i>Trang chủ</a></li>
-						<li><a href="https://vnexpress.net/thoi-su"><i class="ic ic-m-news"></i>Thời sự</a></li>
-						<li><a href="https://vnexpress.net/goc-nhin"><i class="ic ic-m-opinion"></i>Góc nhìn</a></li>
-						<li><a href="https://vnexpress.net/the-gioi"><i class="ic ic-m-world"></i>Thế giới</a></li>
-						<li class="active"><a href="https://vnexpress.net/kinh-doanh"><i
-									class="ic ic-m-business"></i>Kinh doanh</a>
-						</li>
-						<li><a href="https://vnexpress.net/giai-tri"><i class="ic ic-m-entertainment"></i>Giải trí</a>
-						</li>
-						<li><a href="https://vnexpress.net/the-thao"><i class="ic ic-m-sport"></i>Thể thao</a></li>
-						<li><a href="https://vnexpress.net/phap-luat"><i class="ic ic-m-law"></i>Pháp luật</a></li>
-						<li><a href="https://vnexpress.net/giao-duc"><i class="ic ic-m-education"></i>Giáo dục</a></li>
-						<li><a href="https://vnexpress.net/suc-khoe"><i class="ic ic-m-health"></i>Sức khỏe</a></li>
-						<li><a href="https://vnexpress.net/doi-song"><i class="ic ic-m-family"></i>Đời sống</a></li>
-						<li><a href="https://vnexpress.net/du-lich"><i class="ic ic-m-travel"></i>Du lịch</a></li>
-						<li><a href="https://vnexpress.net/khoa-hoc"><i class="ic ic-m-science"></i>Khoa học</a></li>
-						<li><a href="https://vnexpress.net/so-hoa"><i class="ic ic-m-technology"></i>Số hóa</a></li>
-						<li><a href="https://vnexpress.net/oto-xe-may"><i class="ic ic-m-car"></i>Xe</a></li>
-						<li><a href="https://vnexpress.net/y-kien"><i class="ic ic-m-social"></i>Ý kiến</a></li>
-						<li><a href="https://vnexpress.net/tam-su"><i class="ic ic-m-talk"></i>Tâm sự</a></li>
-						<li><a href="https://video.vnexpress.net"><i class="ic ic-m-video"></i>Video</a></li>
-						<li><a href="https://vnexpress.net/anh"><i class="ic ic-m-photo"></i>Ảnh</a></li>
-						<li><a href="https://vnexpress.net/infographics"><i
-									class="ic ic-m-infographic"></i>Infographics</a></li>
-						<li><a href="https://vnexpress.net/cuoi"><i class="ic ic-m-fun"></i>Cười</a></li>
-						<li><a href="https://raovat.vnexpress.net"><i class="ic ic-m-ecom"></i>Fsell</a></li>
-						<li><a href="https://vnexpress.net/24h-qua" class="bg_666"><i class="ic ic-m-24h"></i>24h
-								qua</a></li>
-						<li><a href="https://vnexpress.net/lien-he-toa-soan/" class="bg_e8e8"><i
-									class="ic ic-m-contact"></i>Liên hệ Tòa soạn</a></li>
-						<li class="end"><a href="https://vnexpress.net/contact.htm" class="bg_e8e8"><i
-									class="ic ic-m-mail"></i>Thông tin Tòa soạn</a>
-						</li>
-					</ul>
-					<div class="coppy_right_left width_common">
-						<i class="ic ic-caret-2-down"></i>
-						<div class="txt_coppy_right">
-							<p>&copy; Copyright 1997 - VnExpress.net, All rights reserved</p>
-							<p>&reg; VnExpress giữ bản quyền nội dung trên website này.</p>
-						</div>
-						<div class="txt_lienhe"> Hotline:
-							<br> <a href="tel:0838880123">083.888.0123 (Hà Nội)</a>
-							<br> <a href="tel:0822333555">082.233.3555 (TP HCM)</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="ascrail2000" class="nicescroll-rails">
-				<div class="vne-hr1"></div>
-			</div>
-			<div id="ascrail2000-hr" class="nicescroll-rails">
-				<div class="vne-hr2"></div>
-			</div>
-		</div>
-		<!-- End Menu -->
-		<!-- Main Content -->
-		<div class="section-content clearfix">
-			<div class="wrapper-content">
-				<div id="overlay"></div>
-				<div class="my_container">
-					<div class="section_1">
-						<div class="group_image_header">
-							<img class="img" src="assets/images/img_header.png" />
-							<img class="img" src="assets/images/group_1_1.png" />
-							<img class="img" src="assets/images/group_1_2.png" />
-							<img class="img" src="assets/images/group_1_3.png" />
+              <div
+                class="group_text_1"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="600"
+                data-aos-offset="300"
+              >
+                <p class="text_content t-content">
+                  - Theo báo cáo gần đây nhất của Google & Bain Co., nền kinh tế
+                  số của Việt Nam có tốc độ tăng trưởng nhanh nhất trong khu vực
+                  Đông Nam Á. Quy mô và số lượng giao dịch tăng vọt của nền kinh
+                  tế số tạo ra số lượng dữ liệu khổng lồ, điều này đòi hỏi doanh
+                  nghiệp cần có một nền tảng linh hoạt để lưu trữ, xử lý dữ
+                  liệu, một công cụ mạnh mẽ để khai thác dữ liệu. Cloud và AI
+                  chính là "bộ đôi" giải quyết bài toán này của doanh nghiệp.
+                </p>
+                <p class="text_content t-content">
+                  Dẫn chứng từ báo cáo IBM năm nay, AI giúp 35% doanh nghiệp
+                  tăng tối thiểu 5% doanh thu, có những đơn vị chạm mốc 20%.
+                  Doanh nghiệp Việt có thể thoát khỏi vùng an toàn, khai phá
+                  những lĩnh vực kinh doanh mới nhờ ứng dụng AI. Theo đó, AI
+                  giúp doanh nghiệp nâng cao năng suất lao động, rút ngắn tốc độ
+                  ra quyết định và cải thiện trải nghiệm của khách hàng. Điều
+                  này giúp các doanh nghiệp Việt có thể đạt được những bước nhảy
+                  vọt về năng suất lao động để thoát khỏi "bẫy" thu nhập trung
+                  bình.
+                </p>
+                <p class="text_content t-content">
+                  Còn đối với Cloud, theo một khảo sát, có đến 90% doanh nghiệp
+                  cho rằng nên đầu tư vào cơ sở hạ tầng dữ liệu, trong đó có
+                  điện toán đám mây. Cloud giúp doanh nghiệp tăng trưởng 19,63%
+                  doanh thu, tiết kiệm lên tới 16,18% chi phí vận hành, trong đó
+                  bao gồm chi tiêu cho IT và chi phí bảo trì kỹ thuật.
+                </p>
+                <p class="text_content t-content">
+                  Trong 5 năm tới, khi doanh nghiệp có những nhận thức và bước
+                  đầu đưa AI và Cloud trong sản xuất, dịch vụ, quy mô thị trường
+                  sẽ rất khổng lồ. Sử dụng AI và Cloud khi đó có thể không phải
+                  lựa chọn của doanh nghiệp, mà là xu thế bắt buộc từ thị
+                  trường.
+                </p>
+              </div>
+              <!-- <img src="assets/images/img_1.png" class="img_bantay" alt="" /> -->
+              <div class="group_image_2 pc">
+                <img
+                  class="img"
+                  src="assets/images/group_3_1.png"
+                  data-aos="fade-down-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-offset="400"
+                  data-aos-delay="300"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_3_2.png"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="400"
+                  data-aos-delay="800"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_3_3.png"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="400"
+                  data-aos-delay="1000"
+                />
+              </div>
+              <div class="group_image_2 mobile">
+                <img
+                  class="img"
+                  src="assets/images/group_3_1_mobile.png"
+                  data-aos="fade-down-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="200"
+                  data-aos-delay="300"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_3_2_mobile.png"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="200"
+                  data-aos-delay="300"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_3_3_mobile.png"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="200"
+                  data-aos-delay="500"
+                />
+              </div>
+              <div
+                class="group_text_2"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="600"
+                data-aos-offset="300"
+              >
+                <p class="text_content t-content alt_img trich">
+                  - FPT Smart Cloud đang phát triển các sản phẩm gì ứng dụng AI
+                  và Cloud để khai thác hiệu quả tiềm năng thị trường mang mang
+                  lại, thưa ông?
+                </p>
+                <p class="text_content t-content">
+                  - Mỗi công ty trong hệ sinh thái của FPT đều cung cấp một dịch
+                  vụ khác nhau, tại FPT Telecom "bán mạng", FPT Online "bán
+                  báo", còn FPT Smart Cloud chúng tôi đang "bán mây". Người ta
+                  vẫn thường nói về 4 trụ cột trong xu hướng phát triển công
+                  nghệ hiện tại gồm “A-B-C-D”. Trong đó, A là AI, B là
+                  Blockchain, C là Cloud còn D là Data. Chúng tôi cung cấp 3
+                  dòng sản phẩm chính gồm trí tuệ nhân tạo (A), điện toán đám
+                  mây (C) và dữ liệu (D). Đây đều là công nghệ lõi của xu hướng
+                  phát triển công nghệ hiện tại.
+                </p>
+                <p class="text_content t-content">
+                  Cụ thể, khi sử dụng Cloud, doanh nghiệp sẽ không mất quá nhiều
+                  công sức và tiền bạc để trang bị phần cứng, lo lắng về bảo
+                  trì, bảo dưỡng và đội ngũ vận hành. Tất cả các việc đó sẽ được
+                  cung cấp bởi FPT Cloud.
+                </p>
+                <p class="text_content t-content">
+                  Về AI, chúng tôi đang phát triển các sản phẩm AI Chat –
+                  Chatbot AI thông minh, AI Engage – Voicebot AI tương tác 2
+                  chiều, AI Read – Xử lý, trích xuất dữ liệu tự động và AI eKYC
+                  – Định danh khách hàng điện tử.
+                </p>
+                <p class="text_content t-content">
+                  Tại Việt Nam, nguồn lực về Cloud, Data, AI rất hiếm với các
+                  công ty không theo mảng công nghệ. FPT Smart Cloud giúp đỡ các
+                  doanh nghiệp có thể dễ dàng tiếp cận các công nghệ lõi đấy dễ
+                  dàng và hiệu quả hơn.
+                </p>
+              </div>
+              <div class="section_1_2">
+                <img
+                  src="assets/images/bg_4.png"
+                  class="img_medium"
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-offset="350"
+                />
+              </div>
 
-						</div>
-						<div class="section_1_1">
-							<p class="text_title">
-								AI và Cloud giúp doanh nghiệp có thể tăng năng suất lao động, rút ngắn thời gian ra
-								quyết định, nâng cao tối thiểu 5% doanh thu, theo ông Lê Hồng Việt, Tổng Giám đốc FPT
-								Smart Cloud.
-							</p>
-							<div class="section_1_1_sub">
-								<div class="section_1_1_sub__1">
-									<p class="text_content">
-										Để thoát khỏi "bẫy" thu nhập trung bình và gia tăng lợi thế trong cuộc đua trở
-										thành công xưởng thế giới, doanh nghiệp Việt cần tìm lời giải cho bài toán nâng
-										cao năng suất lao động và rút ngắn tốc độ ra quyết định. Theo đó, áp dụng công
-										nghệ mới, đặc biệt là trí tuệ nhân tạo (AI) và điện toán đám mây (Cloud) được
-										coi là yếu tố giúp doanh nghiệp bứt tốc trong kỷ nguyên số.
-									</p>
-									<p class="text_content">
-										Trả lời phỏng vấn VnExpress, ông Lê Hồng Việt – Tổng Giám đốc FPT Smart Cloud,
-										doanh nghiệp hiện phát triển các sản phẩm ứng dụng AI và Cloud phục vụ hơn 12
-										triệu người dùng cuối hé mở bức tranh về tiềm năng thị trường và giấc mơ biến
-										mọi doanh nghiệp Việt thành doanh nghiệp công nghệ.
-									</p>
+              <div
+                class="group_text_3"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="600"
+                data-aos-offset="300"
+              >
+                <p class="text_content t-content alt_img trich">
+                  - Ở chiều ngược lại, FPT Smart Cloud đang đối diện với thách
+                  thức nào khi phát triển các sản phẩm công nghệ ứng dụng AI và
+                  Cloud?
+                </p>
+                <p class="text_content t-content">
+                  - Thách thức đầu tiên đến từ thị trường. Điều này nằm ở tư duy
+                  của các lãnh đạo các doanh nghiệp. Thông thường, lãnh đạo
+                  doanh nghiệp có hai chiều hướng suy nghĩ. Thứ nhất, AI, Cloud
+                  không làm được gì nên không thể ứng dụng vào sản xuất. Thứ
+                  hai, một số lãnh đạo nghĩ AI, Cloud làm được mọi thứ. Đến khi
+                  đi vào thực tế, nhiều người vỡ mộng và nhìn công nghệ với con
+                  mắt tiêu cực. Ngoài ra, khi ứng dụng AI và Cloud, hệ thống dữ
+                  liệu thông tin đi kèm cần đạt độ sẵn sàng nhất định. Nếu không
+                  đạt độ sẵn sàng, rất khó để doanh nghiệp bắt đầu.
+                </p>
+                <p class="text_content t-content">
+                  Thách thức tiếp theo đến từ việc cần có sản phẩm ứng dụng AI
+                  và Cloud phù hợp với ngành hàng, lĩnh vực. Các công nghệ này
+                  khi được áp dụng với một số ngành hàng nhất định, giải quyết
+                  những bài toán kinh doanh cụ thể có thể đem lại hiệu quả.
+                  Nhưng với ngành khác thì chưa chắc phát huy tác dụng. Tại FPT
+                  Smart Cloud, chúng tôi có chương trình AI Lab, nơi khách hàng
+                  nêu ra các khó khăn trong kinh doanh, FPT Smart Cloud tìm ra
+                  các phương án để áp dụng AI, Cloud hiệu quả.
+                </p>
+                <p class="text_content t-content">
+                  Bên cạnh đó, thách thức còn xuất phát từ việc giành lại thị
+                  phần Cloud trên "sân nhà" với các đơn vị cung cấp nước ngoài.
+                  Hiện tại, 80% thị phần của thị trường Cloud vẫn thuộc về các
+                  nhà cung cấp nước ngoài. Tuy nhiên, trong 5 năm tới, khi thị
+                  trường Cloud Việt có độ mở rộng hơn hiện tại với nhiều dư địa
+                  phát triển, FPT Smart Cloud mong muốn chiếm 10-15% thị phần.
+                </p>
+                <p class="text_content t-content trich">
+                  - So với các nhà cung cấp sản phẩm AI và Cloud nước ngoài, ở
+                  thị trường nội địa, lợi thế cạnh tranh của các sản phẩm từ FPT
+                  Smart Cloud là gì?
+                </p>
+                <p class="text_content t-content">
+                  - Bản chất chữ "Việt Nam" nêu ra yếu tố cạnh tranh. Lợi thế
+                  cạnh tranh của FPT Smart Cloud trước hết nằm ở việc am hiểu
+                  thị trường kinh doanh tại Việt Nam. Đối với sản phẩm AI, chúng
+                  tôi có thế mạnh về xử lý ngôn ngữ tiếng Việt. Công ty đang đầu
+                  tư rất nhiều vào xử lý dữ liệu tiếng Việt, kiểm thử và hiệu
+                  chỉnh mô hình liên tục. Là doanh nghiệp Việt, sản xuất sản
+                  phẩm ứng dụng cho thị trường Việt Nam nên FPT Smart Cloud sẽ
+                  có những dịch vụ "thửa" riêng. Các sản phẩm may đo riêng cho
+                  doanh nghiệp Việt Nam phù hợp với thị trường, giúp họ thích
+                  ứng tốt hơn về mặt công nghệ.
+                </p>
+                <p class="text_content t-content">
+                  Về năng lực hỗ trợ, tại thị trường trong nước, doanh nghiệp
+                  làm công nghệ cao Việt Nam cung cấp khả năng hỗ trợ nội địa
+                  tốt hơn so với đối tác nước ngoài.
+                </p>
+              </div>
+              <img
+                src="assets/images/img_2.png"
+                class="img_big img_big_1 pc"
+                alt=""
+              />
+              <img
+                src="assets/images/img_2_mobile.png"
+                class="img_big img_big_1 mobile"
+                alt=""
+              />
+              <div
+                class="group_text_4"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="600"
+                data-aos-offset="300"
+              >
+                <p class="text_content t-content alt_img trich">
+                  - Chiến lược phát triển sản phẩm ở FPT Smart Cloud được xây
+                  dựng như thế nào để hiện thực hóa mục tiêu giành thị phần trên
+                  "sân nhà"?
+                </p>
+                <p class="text_content t-content">
+                  - FPT Smart Cloud đưa ra mục tiêu, biến mọi doanh nghiệp Việt
+                  thành doanh nghiệp công nghệ để việc tiếp cận AI dễ dàng như
+                  một bữa ăn trưa ai cũng có thể tiếp cận và sử dụng. Trong vòng
+                  2-3 năm nữa, AI và Cloud sẽ trở thành một phần tất yếu của các
+                  doanh nghiệp.
+                </p>
+                <p class="text_content t-content">
+                  Để làm được điều này, FPT Smart Cloud xây dựng chiến lược
+                  thích ứng được với yếu tố nội địa Việt, tạo ra sự khác biệt
+                  cho doanh nghiệp nội địa. Cụ thể, tôi tin doanh nghiệp Việt
+                  chỉ có thể cạnh tranh được với công ty nước ngoài khi tạo ra
+                  các giá trị khác biệt và lợi thế nội địa. Công nghệ của FPT
+                  Smart Cloud sẽ giúp các doanh nghiệp tạo ra các lợi thế riêng
+                  đó. Từ đội ngũ làm công nghệ đến sản phẩm đều phải biết kết
+                  hợp nhuần nhuyễn giữa những yếu tố Việt Nam với nền tảng khoa
+                  học công nghệ kế thừa từ các nước phát triển.
+                </p>
+                <p class="text_content t-content">
+                  Khi làm công nghệ, các công ty phải chấp nhận rủi ro cạnh
+                  tranh lớn, sản phẩm dễ dàng có thể bị copy về mặt ý tưởng. Tuy
+                  nhiên, thứ không thể sao chép với sản phẩm của chúng tôi là
+                  công nghệ lõi – công nghệ "made by FPT" và "made in Việt Nam".
+                </p>
+                <p class="text_content t-content">
+                  Có một điểm khác biệt trong chiến lược phát triển sản phẩm của
+                  FPT so với các doanh nghiệp trong một số lĩnh vực khácđó là
+                  ngay khi sản phẩm được khách hàng đón nhận, chúng tôi phải
+                  liên tục tìm cách cải tiến liên tục và nghiên cứu sản phẩm
+                  mới. Điều này phản ánh chiến lược phát triển sản phẩm thứ hai
+                  của chúng tôi chính là tốc độ. Tốc độ tạo ra sự khác biệt. Để
+                  có tốc độ cần có con người tốt, tiềm lực đầu tư lớn về tiền
+                  bạc.
+                </p>
+              </div>
+              <div class="group_image pc">
+                <img
+                  class="img"
+                  src="assets/images/group_2_1.png"
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-offset="300"
+                  data-aos-delay="200"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_2_2.png"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-offset="300"
+                  data-aos-delay="700"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_2_3.png"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-offset="300"
+                  data-aos-delay="500"
+                />
+              </div>
+              <div class="group_image mobile">
+                <img
+                  class="img"
+                  src="assets/images/group_2_1_mobile.png"
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-offset="400"
+                  data-aos-delay="200"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_2_2_mobile.png"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-offset="400"
+                  data-aos-delay="700"
+                />
+                <img
+                  class="img"
+                  src="assets/images/group_2_3_mobile.png"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-offset="400"
+                  data-aos-delay="500"
+                />
+              </div>
+              <div
+                class="group_text_5"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="600"
+                data-aos-offset="300"
+              >
+                <p class="text_content t-content alt_img trich">
+                  - Để đáp ứng yêu cầu làm ra các sản phẩm công nghệ cao, đội
+                  ngũ nhân sự tại FPT Smart Cloud được xây dựng ra sao?
+                </p>
+                <p class="text_content t-content">
+                  Để duy trì lợi thế cạnh tranh, ngoài sản phẩm chúng tôi cũng
+                  chú trọng vào yếu tố con người. Nhân tài được coi là nguồn tài
+                  nguyên quan trọng nhất ở FPT Smart Cloud. Ở đây, chúng tôi có
+                  đội ngũ chuyên gia hàng đầu trong các mảng AI, Cloud và Data.
+                </p>
+                <p class="text_content t-content">
+                  Với mục tiêu rõ ràng và hấp dẫn, FPT Smart Cloud có thể tuyển
+                  người giỏi vì người giỏi thích làm việc với người giỏi. Đội
+                  ngũ các nhà nghiên cứu AI, Cloud ở đây đa phần đều tốt nghiệp
+                  tiến sĩ ở nước ngoài. Ngoài ra, chúng tôi cũng tuyển chọn top
+                  5 sinh viên các trường Đại học để ươm mầm và tạo ra lớp kế
+                  cận.
+                </p>
+                <p class="text_content t-content">
+                  Chúng tôi xây dựng môi trường làm việc dựa trên sự tôn trọng,
+                  công bằng và khích lệ sáng tạo. Một điểm đặc biệt trong văn
+                  hóa của FPT Smart Cloud thu hút các tài năng trẻ là tinh thần
+                  "không biên giới" trong mọi hoạt động từ làm sản phẩm đến vận
+                  hành. Gần như không có khoảng cách giữa các bạn trẻ và cán bộ
+                  quản lý, hay với cả ban lãnh đạo. Chúng tôi trao quyền để các
+                  bạn trẻ bứt phá và cống hiến trong sự nghiệp, lắng nghe để
+                  mang đến trải nghiệm tốt nhất cho nhân viên.
+                </p>
+                <p class="text_content t-content">
+                  Chúng tôi khích lệ những sáng tạo nhằm cải tiến hiệu suất công
+                  việc, phát triển những tính năng đột phá cho sản phẩm, bằng
+                  việc tổ chức các cuộc thi lập trình, sáng kiến trong nội bộ
+                  FPT (FCI Hackathon, IKhien,..), ghi nhận và đánh giá cao những
+                  đóng góp mang lại giá trị cho cộng đồng nói chung và công ty
+                  nói riêng.
+                </p>
+              </div>
+              <div class="section_1_3">
+                <img
+                  src="assets/images/img_3.png"
+                  class="img_big pc img_1_3 not_820"
+                  alt=""
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="300"
+                />
+                <img
+                  src="assets/images/img_3_mobile.png"
+                  class="img_big mobile is_820"
+                  alt=""
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="300"
+                />
+              </div>
+              <div
+                class="bg_line"
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="600"
+                data-aos-offset="300"
+              ></div>
+              <div
+                class="under_line"
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="600"
+                data-aos-offset="300"
+              >
+                <img
+                  class="img_center img_under_line"
+                  src="assets/images/img_6.png"
+                  alt=""
+                />
+                <div
+                  class="group_text_7"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-offset="300"
+                >
+                  <p class="text_content t-content alt_img trich">
+                    - Trong tương lai, ông dự đoán thế nào về xu hướng phát
+                    triển của AI và Cloud tại Việt Nam?
+                  </p>
+                  <p class="text_content t-content">
+                    - Sẽ có hai xu hướng về AI phát triển trong tương lai. Xu
+                    hướng thứ nhất là AI trong vận hành của doanh nghiệp – AI in
+                    office. Với mỗi nhân viên văn phòng, trong từng công việc sẽ
+                    có một trợ lý ảo để hỗ trợ để cộng hưởng tốt cảm xúc, khả
+                    năng cảm thụ của người với sự chính xác của máy. Mô hình vận
+                    hành người và máy cũng là mô hình FPT Smart Cloud hướng đến
+                    để kiến tạo các lợi ích và giá trị trong tương lai. Xu hướng
+                    trợ lý ảo trong doanh nghiệp sẽ phát triển rất nhanh. FPT.AI
+                    sẽ là động lực chính để thúc đẩy xu hướng này ở Việt Nam. Xu
+                    hướng thứ hai là AI trong công nghiệp, dây chuyền tự động,
+                    robot.
+                  </p>
+                  <p class="text_content t-content">
+                    Còn với Cloud, Cloud nội địa sẽ phát triển nhanh tại Việt
+                    Nam trong thời gian tới. Không chỉ riêng FPT Smart Cloud
+                    phát triển mảng này, các công ty Cloud nội địa cũng đang gia
+                    nhập sân chơi mạnh mẽ. Khách hàng có thể sử dụng mô hình
+                    hybridcloud, với một bên cung cấp Cloud nước ngoài và một
+                    bên cung cấp Cloud nội địa. Điều này giúp doanh nghiệp tối
+                    ưu hóa mọi nguồn lựa cho sự phát triển.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="assets/images/img_4.png"
+                class="img_big img_last pc"
+                alt=""
+              />
+              <img
+                src="assets/images/img_4_mobile.png"
+                class="img_big img_last mobile"
+                alt=""
+              />
+              <div
+                class="group_text_6"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="600"
+                data-aos-offset="300"
+              >
+                <p class="text_content t-content alt_img trich">
+                  - Lời khuyên của ông để các doanh nghiệp Việt có thể ứng dụng
+                  hiệu quả AI và Cloud là gì?
+                </p>
+                <p class="text_content t-content">
+                  - AI, Cloud là công nghệ chiến lược giúp doanh nghiệp đạt mục
+                  tiêu tăng trưởng và kiến tạo giá trị cạnh tranh cho doanh
+                  nghiệp Việt Nam tại thị trường Việt Nam và trên thế giới.
+                </p>
+                <p class="text_content t-content">
+                  Theo tôi, để áp dụng AI và Cloud hiệu quả trong doanh nghiệp,
+                  điều đầu tiên cần thay đổi là tư duy của người quản lý, tránh
+                  xu hướng tiêu cực hay lạc quan hoá giá trị các công nghệ mang
+                  đến. Lãnh đạo doanh nghiệp cần có cái nhìn chính xác về sử
+                  dụng AI và Cloud ở đâu, sử dụng như thế nào. Khi đó, các sản
+                  phẩm này mới có thể ứng dụng hiệu quả trong doanh nghiệp.
+                </p>
+                <p class="text_content t-content">
+                  Ngoài ra, để ứng dụng hiệu quả AI và Cloud cần mạnh dạn thử
+                  nghiệm. Không có dự án nào có thể thành công ngay bước đầu,
+                  thành công có thể đến sau 2-3 lần thử nghiệm.
+                </p>
+                <p class="text_content t-content trich">
+                  Việc xây dựng nguồn nhân sự hiểu và có thể ứng dụng AI, Cloud
+                  cũng là bài toán cần giải của các doanh nghiệp trong thời điểm
+                  hiện tại. Cuối cùng, doanh nghiệp cũng cần cân nhắc việc tự
+                  xây dựng nguồn lực AI và Cloud cho mình hay lựa chọn đối tác
+                  công nghệ phù hợp để có thể phát huy sức mạnh nội tại và cộng
+                  hưởng với những giá trị từ bên ngoài mang đến thành công.
+                </p>
+                <div class="author">
+                  <p class="text_content t-content pc">
+                    Nội dung: <span>Hồng Thảo</span> - Thiết kế:<span
+                      >Hằng Trịnh</span
+                    >
+                    - Kỹ thuật:<span> Bá Sơn</span>
+                  </p>
+                  <p class="text_content t-content mobile">
+                    Nội dung: <span>Hồng Thảo</span> <br />
+                    Thiết kế:<span>Hằng Trịnh</span><br />
+                    Kỹ thuật:<span> Bá Sơn</span>
+                  </p>
+                </div>
+                <!-- <img src="assets/images/bg_10_dev.png" alt="" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Main Content -->
 
-								</div>
-								<img class="img_center" src="assets/images/img_5.png" alt="">
-								<p class="text_content alt_img trich">
-									- Ông đánh giá như thế nào về tiềm năng của thị trường Việt Nam trong việc triển
-									khai
-									các sản phẩm dựa trên AI và Cloud?
-								</p>
-							</div>
-						</div>
+      <!-- COMMENTS BOX -->
+      <!-- END COMMENTS BOX -->
+    </div>
+    <!-- End Document Warpper -->
 
-						<div class="group_text_1">
-							<p class="text_content">
-								- Theo báo cáo gần đây nhất của Google & Bain Co., nền kinh tế số của Việt Nam có tốc độ
-								tăng trưởng nhanh nhất trong khu vực Đông Nam Á. Quy mô và số lượng giao dịch tăng vọt
-								của nền kinh tế số tạo ra số lượng dữ liệu khổng lồ, điều này đòi hỏi doanh nghiệp cần
-								có một nền tảng linh hoạt để lưu trữ, xử lý dữ liệu, một công cụ mạnh mẽ để khai thác dữ
-								liệu. Cloud và AI chính là "bộ đôi" giải quyết bài toán này của doanh nghiệp.
-							</p>
-							<p class="text_content">
-								Dẫn chứng từ báo cáo IBM năm nay, AI giúp 35% doanh nghiệp tăng tối thiểu 5% doanh thu,
-								có những đơn vị chạm mốc 20%. Doanh nghiệp Việt có thể thoát khỏi vùng an toàn, khai phá
-								những lĩnh vực kinh doanh mới nhờ ứng dụng AI. Theo đó, AI giúp doanh nghiệp nâng cao
-								năng suất lao động, rút ngắn tốc độ ra quyết định và cải thiện trải nghiệm của khách
-								hàng. Điều này giúp các doanh nghiệp Việt có thể đạt được những bước nhảy vọt về năng
-								suất lao động để thoát khỏi "bẫy" thu nhập trung bình.
-							</p>
-							<p class="text_content">
-								Còn đối với Cloud, theo một khảo sát, có đến 90% doanh nghiệp cho rằng nên đầu tư vào cơ
-								sở hạ tầng dữ liệu, trong đó có điện toán đám mây. Cloud giúp doanh nghiệp tăng trưởng
-								19,63% doanh thu, tiết kiệm lên tới 16,18% chi phí vận hành, trong đó bao gồm chi tiêu
-								cho IT và chi phí bảo trì kỹ thuật.
-							</p>
-							<p class="text_content">
-								Trong 5 năm tới, khi doanh nghiệp có những nhận thức và bước đầu đưa AI và Cloud trong
-								sản xuất, dịch vụ, quy mô thị trường sẽ rất khổng lồ. Sử dụng AI và Cloud khi đó có thể
-								không phải lựa chọn của doanh nghiệp, mà là xu thế bắt buộc từ thị trường.
-							</p>
-						</div>
-						<img src="assets/images/img_1.png" class="img_bantay" alt="">
-						<div class="group_text_2">
-							<p class="text_content alt_img">
-								- FPT Smart Cloud đang phát triển các sản phẩm gì ứng dụng AI và Cloud để khai thác hiệu
-								quả tiềm năng thị trường mang mang lại, thưa ông?
-							</p>
-							<p class="text_content">
-								- Mỗi công ty trong hệ sinh thái của FPT đều cung cấp một dịch vụ khác nhau, tại FPT
-								Telecom "bán mạng", FPT Online "bán báo", còn FPT Smart Cloud chúng tôi đang "bán mây".
-								Người ta vẫn thường nói về 4 trụ cột trong xu hướng phát triển công nghệ hiện tại gồm
-								“A-B-C-D”. Trong đó, A là AI, B là Blockchain, C là Cloud còn D là Data. Chúng tôi cung
-								cấp 3 dòng sản phẩm chính gồm trí tuệ nhân tạo (A), điện toán đám mây (C) và dữ liệu
-								(D). Đây đều là công nghệ lõi của xu hướng phát triển công nghệ hiện tại.
-							</p>
-							<p class="text_content">
-								Cụ thể, khi sử dụng Cloud, doanh nghiệp sẽ không mất quá nhiều công sức và tiền bạc để
-								trang bị phần cứng, lo lắng về bảo trì, bảo dưỡng và đội ngũ vận hành. Tất cả các việc
-								đó sẽ được cung cấp bởi FPT Cloud.
-							</p>
-							<p class="text_content">
-								Về AI, chúng tôi đang phát triển các sản phẩm AI Chat – Chatbot AI thông minh, AI Engage
-								– Voicebot AI tương tác 2 chiều, AI Read – Xử lý, trích xuất dữ liệu tự động và AI eKYC
-								– Định danh khách hàng điện tử.
-							</p>
-							<p class="text_content">
-								Tại Việt Nam, nguồn lực về Cloud, Data, AI rất hiếm với các công ty không theo mảng công
-								nghệ. FPT Smart Cloud giúp đỡ các doanh nghiệp có thể dễ dàng tiếp cận các công nghệ lõi
-								đấy dễ dàng và hiệu quả hơn.
-							</p>
-						</div>
-						<div class="section_1_2">
-							<img src="assets/images/bg_4.png" class="img_medium" alt="">
-						</div>
+    <!-- Core Script -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.migrate.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/header-sticky.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.nicescroll.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/lib.min.js"></script>
+    <!-- End Core Script -->
 
-						<div class="group_text_3">
-							<p class="text_content alt_img trich">
-								- Ở chiều ngược lại, FPT Smart Cloud đang đối diện với thách thức nào khi phát triển các
-								sản phẩm công nghệ ứng dụng AI và Cloud?
-							</p>
-							<p class="text_content">
-								- Thách thức đầu tiên đến từ thị trường. Điều này nằm ở tư duy của các lãnh đạo các
-								doanh nghiệp. Thông thường, lãnh đạo doanh nghiệp có hai chiều hướng suy nghĩ. Thứ nhất,
-								AI, Cloud không làm được gì nên không thể ứng dụng vào sản xuất. Thứ hai, một số lãnh
-								đạo nghĩ AI, Cloud làm được mọi thứ. Đến khi đi vào thực tế, nhiều người vỡ mộng và nhìn
-								công nghệ với con mắt tiêu cực. Ngoài ra, khi ứng dụng AI và Cloud, hệ thống dữ liệu
-								thông tin đi kèm cần đạt độ sẵn sàng nhất định. Nếu không đạt độ sẵn sàng, rất khó để
-								doanh nghiệp bắt đầu.
-							</p>
-							<p class="text_content">
-								Thách thức tiếp theo đến từ việc cần có sản phẩm ứng dụng AI và Cloud phù hợp với ngành
-								hàng, lĩnh vực. Các công nghệ này khi được áp dụng với một số ngành hàng nhất định, giải
-								quyết những bài toán kinh doanh cụ thể có thể đem lại hiệu quả. Nhưng với ngành khác thì
-								chưa chắc phát huy tác dụng. Tại FPT Smart Cloud, chúng tôi có chương trình AI Lab, nơi
-								khách hàng nêu ra các khó khăn trong kinh doanh, FPT Smart Cloud tìm ra các phương án để
-								áp dụng AI, Cloud hiệu quả.
-							</p>
-							<p class="text_content">
-								Bên cạnh đó, thách thức còn xuất phát từ việc giành lại thị phần Cloud trên "sân nhà"
-								với các đơn vị cung cấp nước ngoài. Hiện tại, 80% thị phần của thị trường Cloud vẫn
-								thuộc về các nhà cung cấp nước ngoài. Tuy nhiên, trong 5 năm tới, khi thị trường Cloud
-								Việt có độ mở rộng hơn hiện tại với nhiều dư địa phát triển, FPT Smart Cloud mong muốn
-								chiếm 10-15% thị phần.
-							</p>
-							<p class="text_content trich">
-								- So với các nhà cung cấp sản phẩm AI và Cloud nước ngoài, ở thị trường nội địa, lợi thế
-								cạnh tranh của các sản phẩm từ FPT Smart Cloud là gì?
-							</p>
-							<p class="text_content">
-								- Bản chất chữ "Việt Nam" nêu ra yếu tố cạnh tranh. Lợi thế cạnh tranh của FPT Smart
-								Cloud trước hết nằm ở việc am hiểu thị trường kinh doanh tại Việt Nam. Đối với sản phẩm
-								AI, chúng tôi có thế mạnh về xử lý ngôn ngữ tiếng Việt. Công ty đang đầu tư rất nhiều
-								vào xử lý dữ liệu tiếng Việt, kiểm thử và hiệu chỉnh mô hình liên tục.
-								Là doanh nghiệp Việt, sản xuất sản phẩm ứng dụng cho thị trường Việt Nam nên FPT Smart
-								Cloud sẽ có những dịch vụ "thửa" riêng. Các sản phẩm may đo riêng cho doanh nghiệp Việt
-								Nam phù hợp với thị trường, giúp họ thích ứng tốt hơn về mặt công nghệ.
-							</p>
-							<p class="text_content">
-								Về năng lực hỗ trợ, tại thị trường trong nước, doanh nghiệp làm công nghệ cao Việt Nam
-								cung cấp khả năng hỗ trợ nội địa tốt hơn so với đối tác nước ngoài.
-							</p>
-
-						</div>
-						<img src="assets/images/img_2.png" class="img_big img_big_1" alt="">
-						<div class="group_text_4">
-							<p class="text_content alt_img trich">
-								- Ở chiều ngược lại, FPT Smart Cloud đang đối diện với thách thức nào khi phát triển các
-								sản phẩm công nghệ ứng dụng AI và Cloud?
-							</p>
-							<p class="text_content">
-								- Thách thức đầu tiên đến từ thị trường. Điều này nằm ở tư duy của các lãnh đạo các
-								doanh nghiệp. Thông thường, lãnh đạo doanh nghiệp có hai chiều hướng suy nghĩ. Thứ nhất,
-								AI, Cloud không làm được gì nên không thể ứng dụng vào sản xuất. Thứ hai, một số lãnh
-								đạo nghĩ AI, Cloud làm được mọi thứ. Đến khi đi vào thực tế, nhiều người vỡ mộng và nhìn
-								công nghệ với con mắt tiêu cực. Ngoài ra, khi ứng dụng AI và Cloud, hệ thống dữ liệu
-								thông tin đi kèm cần đạt độ sẵn sàng nhất định. Nếu không đạt độ sẵn sàng, rất khó để
-								doanh nghiệp bắt đầu.
-							</p>
-							<p class="text_content">
-								Thách thức tiếp theo đến từ việc cần có sản phẩm ứng dụng AI và Cloud phù hợp với ngành
-								hàng, lĩnh vực. Các công nghệ này khi được áp dụng với một số ngành hàng nhất định, giải
-								quyết những bài toán kinh doanh cụ thể có thể đem lại hiệu quả. Nhưng với ngành khác thì
-								chưa chắc phát huy tác dụng. Tại FPT Smart Cloud, chúng tôi có chương trình AI Lab, nơi
-								khách hàng nêu ra các khó khăn trong kinh doanh, FPT Smart Cloud tìm ra các phương án để
-								áp dụng AI, Cloud hiệu quả.
-							</p>
-							<p class="text_content">
-								Bên cạnh đó, thách thức còn xuất phát từ việc giành lại thị phần Cloud trên "sân nhà"
-								với các đơn vị cung cấp nước ngoài. Hiện tại, 80% thị phần của thị trường Cloud vẫn
-								thuộc về các nhà cung cấp nước ngoài. Tuy nhiên, trong 5 năm tới, khi thị trường Cloud
-								Việt có độ mở rộng hơn hiện tại với nhiều dư địa phát triển, FPT Smart Cloud mong muốn
-								chiếm 10-15% thị phần.
-							</p>
-							<p class="text_content trich">
-								- So với các nhà cung cấp sản phẩm AI và Cloud nước ngoài, ở thị trường nội địa, lợi thế
-								cạnh tranh của các sản phẩm từ FPT Smart Cloud là gì?
-							</p>
-							<p class="text_content">
-								- Bản chất chữ "Việt Nam" nêu ra yếu tố cạnh tranh. Lợi thế cạnh tranh của FPT Smart
-								Cloud trước hết nằm ở việc am hiểu thị trường kinh doanh tại Việt Nam. Đối với sản phẩm
-								AI, chúng tôi có thế mạnh về xử lý ngôn ngữ tiếng Việt. Công ty đang đầu tư rất nhiều
-								vào xử lý dữ liệu tiếng Việt, kiểm thử và hiệu chỉnh mô hình liên tục.
-								Là doanh nghiệp Việt, sản xuất sản phẩm ứng dụng cho thị trường Việt Nam nên FPT Smart
-								Cloud sẽ có những dịch vụ "thửa" riêng. Các sản phẩm may đo riêng cho doanh nghiệp Việt
-								Nam phù hợp với thị trường, giúp họ thích ứng tốt hơn về mặt công nghệ.
-							</p>
-							<p class="text_content">
-								Về năng lực hỗ trợ, tại thị trường trong nước, doanh nghiệp làm công nghệ cao Việt Nam
-								cung cấp khả năng hỗ trợ nội địa tốt hơn so với đối tác nước ngoài.
-							</p>
-
-						</div>
-						<div class="group_image">
-							<img class="img" src="assets/images/group_2_1.png" />
-							<img class="img" src="assets/images/group_2_2.png" />
-							<img class="img" src="assets/images/group_2_3.png" />
-						</div>
-						<div class="group_text_5">
-							<p class="text_content alt_img trich">
-								- Ở chiều ngược lại, FPT Smart Cloud đang đối diện với thách thức nào khi phát triển các
-								sản phẩm công nghệ ứng dụng AI và Cloud?
-							</p>
-							<p class="text_content">
-								- Thách thức đầu tiên đến từ thị trường. Điều này nằm ở tư duy của các lãnh đạo các
-								doanh nghiệp. Thông thường, lãnh đạo doanh nghiệp có hai chiều hướng suy nghĩ. Thứ nhất,
-								AI, Cloud không làm được gì nên không thể ứng dụng vào sản xuất. Thứ hai, một số lãnh
-								đạo nghĩ AI, Cloud làm được mọi thứ. Đến khi đi vào thực tế, nhiều người vỡ mộng và nhìn
-								công nghệ với con mắt tiêu cực. Ngoài ra, khi ứng dụng AI và Cloud, hệ thống dữ liệu
-								thông tin đi kèm cần đạt độ sẵn sàng nhất định. Nếu không đạt độ sẵn sàng, rất khó để
-								doanh nghiệp bắt đầu.
-							</p>
-							<p class="text_content">
-								Thách thức tiếp theo đến từ việc cần có sản phẩm ứng dụng AI và Cloud phù hợp với ngành
-								hàng, lĩnh vực. Các công nghệ này khi được áp dụng với một số ngành hàng nhất định, giải
-								quyết những bài toán kinh doanh cụ thể có thể đem lại hiệu quả. Nhưng với ngành khác thì
-								chưa chắc phát huy tác dụng. Tại FPT Smart Cloud, chúng tôi có chương trình AI Lab, nơi
-								khách hàng nêu ra các khó khăn trong kinh doanh, FPT Smart Cloud tìm ra các phương án để
-								áp dụng AI, Cloud hiệu quả.
-							</p>
-							<p class="text_content">
-								Bên cạnh đó, thách thức còn xuất phát từ việc giành lại thị phần Cloud trên "sân nhà"
-								với các đơn vị cung cấp nước ngoài. Hiện tại, 80% thị phần của thị trường Cloud vẫn
-								thuộc về các nhà cung cấp nước ngoài. Tuy nhiên, trong 5 năm tới, khi thị trường Cloud
-								Việt có độ mở rộng hơn hiện tại với nhiều dư địa phát triển, FPT Smart Cloud mong muốn
-								chiếm 10-15% thị phần.
-							</p>
-							<p class="text_content trich">
-								- So với các nhà cung cấp sản phẩm AI và Cloud nước ngoài, ở thị trường nội địa, lợi thế
-								cạnh tranh của các sản phẩm từ FPT Smart Cloud là gì?
-							</p>
-							<p class="text_content">
-								- Bản chất chữ "Việt Nam" nêu ra yếu tố cạnh tranh. Lợi thế cạnh tranh của FPT Smart
-								Cloud trước hết nằm ở việc am hiểu thị trường kinh doanh tại Việt Nam. Đối với sản phẩm
-								AI, chúng tôi có thế mạnh về xử lý ngôn ngữ tiếng Việt. Công ty đang đầu tư rất nhiều
-								vào xử lý dữ liệu tiếng Việt, kiểm thử và hiệu chỉnh mô hình liên tục.
-								Là doanh nghiệp Việt, sản xuất sản phẩm ứng dụng cho thị trường Việt Nam nên FPT Smart
-								Cloud sẽ có những dịch vụ "thửa" riêng. Các sản phẩm may đo riêng cho doanh nghiệp Việt
-								Nam phù hợp với thị trường, giúp họ thích ứng tốt hơn về mặt công nghệ.
-							</p>
-							<p class="text_content">
-								Về năng lực hỗ trợ, tại thị trường trong nước, doanh nghiệp làm công nghệ cao Việt Nam
-								cung cấp khả năng hỗ trợ nội địa tốt hơn so với đối tác nước ngoài.
-							</p>
-
-						</div>
-						<div class="section_1_3">
-							<img src="assets/images/img_3.png" class="img_big" alt="">
-						</div>
-						<div class="bg_line">
-						</div>
-						<div class="under_line">
-							<img class="img_center img_under_line" src="assets/images/img_6.png" alt="">
-							<p class="text_content alt_img trich">
-								- Ở chiều ngược lại, FPT Smart Cloud đang đối diện với thách thức nào khi phát triển các
-								sản phẩm công nghệ ứng dụng AI và Cloud?
-							</p>
-							<p class="text_content">
-								- Bản chất chữ "Việt Nam" nêu ra yếu tố cạnh tranh. Lợi thế cạnh tranh của FPT Smart
-								Cloud trước hết nằm ở việc am hiểu thị trường kinh doanh tại Việt Nam. Đối với sản phẩm
-								AI, chúng tôi có thế mạnh về xử lý ngôn ngữ tiếng Việt. Công ty đang đầu tư rất nhiều
-								vào xử lý dữ liệu tiếng Việt, kiểm thử và hiệu chỉnh mô hình liên tục.
-								Là doanh nghiệp Việt, sản xuất sản phẩm ứng dụng cho thị trường Việt Nam nên FPT Smart
-								Cloud sẽ có những dịch vụ "thửa" riêng. Các sản phẩm may đo riêng cho doanh nghiệp Việt
-								Nam phù hợp với thị trường, giúp họ thích ứng tốt hơn về mặt công nghệ.
-							</p>
-							<p class="text_content">
-								- Bản chất chữ "Việt Nam" nêu ra yếu tố cạnh tranh. Lợi thế cạnh tranh của FPT Smart
-								Cloud trước hết nằm ở việc am hiểu thị trường kinh doanh tại Việt Nam. Đối với sản phẩm
-								AI, chúng tôi có thế mạnh về xử lý ngôn ngữ tiếng Việt. Công ty đang đầu tư rất nhiều
-								vào xử lý dữ liệu tiếng Việt, kiểm thử và hiệu chỉnh mô hình liên tục.
-								Là doanh nghiệp Việt, sản xuất sản phẩm ứng dụng cho thị trường Việt Nam nên FPT Smart
-								Cloud sẽ có những dịch vụ "thửa" riêng. Các sản phẩm may đo riêng cho doanh nghiệp Việt
-								Nam phù hợp với thị trường, giúp họ thích ứng tốt hơn về mặt công nghệ.
-							</p>
-						</div>
-						<img src="assets/images/img_4.png" alt="">
-						<div class="group_text_6">
-							<p class="text_content alt_img trich">
-								- Ở chiều ngược lại, FPT Smart Cloud đang đối diện với thách thức nào khi phát triển các
-								sản phẩm công nghệ ứng dụng AI và Cloud?
-							</p>
-							<p class="text_content">
-								- Thách thức đầu tiên đến từ thị trường. Điều này nằm ở tư duy của các lãnh đạo các
-								doanh nghiệp. Thông thường, lãnh đạo doanh nghiệp có hai chiều hướng suy nghĩ. Thứ nhất,
-								AI, Cloud không làm được gì nên không thể ứng dụng vào sản xuất. Thứ hai, một số lãnh
-								đạo nghĩ AI, Cloud làm được mọi thứ. Đến khi đi vào thực tế, nhiều người vỡ mộng và nhìn
-								công nghệ với con mắt tiêu cực. Ngoài ra, khi ứng dụng AI và Cloud, hệ thống dữ liệu
-								thông tin đi kèm cần đạt độ sẵn sàng nhất định. Nếu không đạt độ sẵn sàng, rất khó để
-								doanh nghiệp bắt đầu.
-							</p>
-							<p class="text_content">
-								Thách thức tiếp theo đến từ việc cần có sản phẩm ứng dụng AI và Cloud phù hợp với ngành
-								hàng, lĩnh vực. Các công nghệ này khi được áp dụng với một số ngành hàng nhất định, giải
-								quyết những bài toán kinh doanh cụ thể có thể đem lại hiệu quả. Nhưng với ngành khác thì
-								chưa chắc phát huy tác dụng. Tại FPT Smart Cloud, chúng tôi có chương trình AI Lab, nơi
-								khách hàng nêu ra các khó khăn trong kinh doanh, FPT Smart Cloud tìm ra các phương án để
-								áp dụng AI, Cloud hiệu quả.
-							</p>
-							<p class="text_content">
-								Bên cạnh đó, thách thức còn xuất phát từ việc giành lại thị phần Cloud trên "sân nhà"
-								với các đơn vị cung cấp nước ngoài. Hiện tại, 80% thị phần của thị trường Cloud vẫn
-								thuộc về các nhà cung cấp nước ngoài. Tuy nhiên, trong 5 năm tới, khi thị trường Cloud
-								Việt có độ mở rộng hơn hiện tại với nhiều dư địa phát triển, FPT Smart Cloud mong muốn
-								chiếm 10-15% thị phần.
-							</p>
-							<p class="text_content trich">
-								- So với các nhà cung cấp sản phẩm AI và Cloud nước ngoài, ở thị trường nội địa, lợi thế
-								cạnh tranh của các sản phẩm từ FPT Smart Cloud là gì?
-							</p>
-							<div class="author">
-								<p class="text_content trich">
-									- So với các nhà cung cấp sản phẩm AI và Cloud nước ngoài, ở thị trường nội địa, lợi
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Main Content -->
-
-		<!-- COMMENTS BOX -->
-		<!-- END COMMENTS BOX -->
-	</div>
-	<!-- End Document Warpper -->
-
-	<!-- Core Script -->
-	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.migrate.min.js"></script>
-	<script type="text/javascript" src="assets/js/header-sticky.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
-	<script type="text/javascript" src="assets/js/lib.min.js"></script>
-	<!-- End Core Script -->
-
-	<script type="text/javascript" src="assets/js/aos.js"></script>
-	<script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
-	<script type="text/javascript" src="assets/js/swiper.min.js"></script>
-	<script type="text/javascript" src="assets/js/main.min.js"></script>
-</body>
-
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
+    <script type="text/javascript" src="assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
